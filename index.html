@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Telemedicine Platform</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Login Screen -->
+  <div id="login-screen" class="screen">
+    <h1>Telemedicine Login</h1>
+    <input type="text" id="username" placeholder="Enter Username">
+    <button onclick="login()">Login</button>
+  </div>
+
+  <!-- Dashboard Screen -->
+  <div id="dashboard-screen" class="screen" style="display: none;">
+    <h1>Welcome to Telemedicine Dashboard</h1>
+    <button onclick="startVideoCall()">Start Video Call</button>
+  </div>
+
+  <!-- Video Call Screen -->
+  <div id="video-call-screen" class="screen" style="display: none;">
+    <h1>Connecting...</h1>
+    <p id="connecting-message"></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
